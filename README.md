@@ -48,3 +48,31 @@ export default tseslint.config({
   },
 })
 ```
+Decisiones 
+La primer decision que tome fue en donde compilar mi proyecto React, esto debido a que se me presentaron problemas con mi equipo al querer crearlo con create-react-app,
+por lo tanto opte por usar vite para esto, una vez creado el archivo comencé a crear mi estructura de carpetas.
+
+Para la conexión con la API de imgBB se considero usar axios para esto, sin embargo tuve inconvenientes al instalar dependencias de esta lib, por lo que opte por usar fetch
+
+Realice una busqueda APIS gratuitas que me permitieran obtener usuarios aleatorios, sin embargo mi busquda no fue exitosa, a lo cual opte por generar un array con 50 datos aleatorios, de este modo alterne en la tabla dos arrays, uno en el cual inyecto un usuario por medio del formulario y almacenado en el localStorage, de este modo me permitio alterna la visualizacion en mi tabla, donde si localStorage esta vacio muestro los datos que genere de manera aleatoria, en caso contrario muestro lo que hay en localStorage
+
+Bibliotecas/Frameworks empleados:
+Para el desarrollo de esta prueba se utilizó lo siguiente:
+React con TypeScript en todo el proyecto
+Material UI para construir las interfaces de tabla y formulario
+React-Hook-Form, se empleo para validar los campos en el formulario
+zod, se utilzó para construir el esquema de validación en los campos del formulario
+imgBB, utilizado para la carga de imagenes mediante la obtención de una API key
+
+Como dependencias adicionales se integraron:
+Material Icons
+gh-pages, para poder hacer un deploy con vite
+npm, para instalar dependencias y/o actualizarlas
+
+Desafios
+
+El mayor desafio, considero fue intentar implementar el mapa, y es que al intentar esto tuve ocasiones en que el codigo se rompia, por cual opte por no implementarlo, y seguir revisando la documentacion de la API
+de Google Maps
+
+El ordenamiento asc-desc en las columnas tambien fue un desafio, y es que por accesibilidad para este caso unicamente considere aplicar el ordenamiento en la primera columna, esto por orden alfabetico, de este modo los usuarios que muestro en la tabla se orden por alfabeto
+
